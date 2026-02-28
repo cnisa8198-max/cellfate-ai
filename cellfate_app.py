@@ -51,6 +51,8 @@ def load_data():
             "X": X, "Xs": Xs, "y": y, "Xpca": Xpca,
             "mean_c0_arr": np.array([v["mean_c0"][p] for p in probes]),
             "mean_c1_arr": np.array([v["mean_c1"][p] for p in probes]),
+            "n_samples": v["n_c0"] + v["n_c1"],
+            "accuracy": v["accuracy"],
         }
     return models
 
